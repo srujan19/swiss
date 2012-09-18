@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head> 
+	<title>MY APPLICATION</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" > 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" >
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js" ></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js" ></script>
+	<script type ="text/javascript">
+var x = 0;
+var y = 0;
+var z = 0;
+function Add()
+{
+	x = document.getElementById("nOne").value;
+	y = document.getElementById("nTwo").value;
+	z = parseInt(x)+parseInt(y); 
+	box.innerHTML = z;}
+function Subtract()
+{
+	x = document.getElementById("nOne").value;
+	y = document.getElementById("nTwo").value;
+	z = parseInt(x)-parseInt(y); 
+	box.innerHTML = z;}
+function Multiply()
+{
+	x = document.getElementById("nOne").value;
+	y = document.getElementById("nTwo").value;
+	z = parseInt(x)*parseInt(y); 
+	box.innerHTML = z;
+}
+function Divide()
+{
+	x = document.getElementById("nOne").value;
+	y = document.getElementById("nTwo").value;
+	z = parseInt(x)/parseInt(y); 
+  	box.innerHTML = z;
+} </script>
+</head> 
+<body> 
+
+<div data-role="MAIN PAGE" >
+
+	<div data-role="header" >
+		<h1>MAIN </h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<br><br><p>Hello world</p>	
+			<a href="http://google.com" data-role="button" data-icon="" >Star button</a>	
+
+			<ul data-role="listview" data-inset="true" data-filter="true" >
+	<li><a href="#" >Alok</a></li>
+	<li><a href="#" >srujan</a></li>
+	<li><a href="#" >phani</a></li>
+	<h1><center>Hello !!</center> </h1>
+	<p>This is an application for a simple calculator.</p>
+	<center>
+	<input id = "nOne" type = "number" />
+	<input id = "nTwo" type = "number" />
+	<br>
+	<input type ="button" value = "Add" onclick = "Add()"/>
+	<input type ="button" value = "Subtract" onclick = "Subtract()"/>
+	<br>
+	<input type ="button" value = "Multiply" onclick = "Multiply()"/>
+	<input type ="button" value = "Divide" onclick = "Divide()"/>
+	<br>
+	<div id ="box"> </div>
+
+</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+</body></html>
